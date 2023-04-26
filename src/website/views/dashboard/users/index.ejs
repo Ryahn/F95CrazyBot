@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../../public/css/bootstrap.css">
+	<script src="../../public/js/bootstrap.bundle.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+	<link rel="shortcut icon" href="../../public/assets/favicon.png" type="image/x-icon">
+	<title>cyberpunkxxx. | <%- guild.name %>'s Dashboard </title>
+	<style>
+		@media screen and (max-width: 767px) {
+			main {
+				margin-left: 2rem !important;
+				margin-right: 2rem !important;
+			}
+		}
+
+		.accordion-m, .accordion-item-m, .accordion-button-m {
+			background-color: #1d2125 !important;
+			color: white !important;
+			box-shadow: none !important;
+			border-radius: 10px !important;
+			border-color: #1d2125 !important;
+		}
+	</style>
+</head>
+<%- await include('sidebar.ejs'); %>
+<main class="col-md-9 ms-md-auto col-lg-10 px-md-4 bg-dark text-white mt-3">
+	<div>
+		<h4>Welcome to the Dashboard!</h5>
+		<h6>
+			From here, you can manage some of the bot's features.
+			<br>
+			Click on the name of the function to manage them. You can enable/disable them here too!
+		</h6>
+	</div>
+	<hr>
+	<div>
+		
+	</div>
+	<%- await include('../error.ejs') %>
+</main>

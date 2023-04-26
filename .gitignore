@@ -1,0 +1,7 @@
+config.json
+node_modules
+src/website/settings.json
+src/data/config.json
+test.js
+test.png
+id_test.png

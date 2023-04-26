@@ -1,0 +1,21 @@
+
+
+	<div class="mt-5">
+		<div class="container ml-3 mr-3">
+            <h2>Founders 500</h2>
+            <div class="row">
+                {{#each data }}
+                <div class="col-sm-2 mb-3">
+                    <div class="card h-100">
+                        <img src="{{ avatar }}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title" style="font-size: 14px;">{{ tag }} <span class="badge primary">{{ num }}</span></h5>
+                          <p class="card-text" style="font-size: 12px;">Founder since {{ joined }}</p>
+                        </div>
+                      </div>
+                </div>
+                {{/each}}
+              </div>
+			
+		</div>
+	</div>

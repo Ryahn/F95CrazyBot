@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="../public/assets/favicon.png">
+	<meta name="keywords" content="cyberpunkxxx, Discord, bot, anime, waifu, dashboard, moderation, discord bot">
+	<!-- Primary Meta Tags -->
+	<title>CyberpunkXXX. - Discord Bot</title>
+	<meta name="title" content="cyberpunkxxx. - Discord Bot">
+	<meta name="description" content="Dedicated discord bot for CyberpunkXXX. | Fast, modern and constantly updated">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="<%- botconfig.domain %>">
+	<meta property="og:title" content="cyberpunkxxx. - Discord Bot">
+	<meta property="og:description" content="Dedicated discord bot for CyberpunkXXX. | Fast, modern and constantly updated">
+	<meta property="og:image" content="<%- botconfig.domain %>/public/assets/avatar512.jpg">
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="<%- botconfig.domain %>">
+	<meta property="twitter:title" content="cyberpunkxxx. - Discord Bot">
+	<meta property="twitter:description" content="Dedicated discord bot for CyberpunkXXX. | Fast, modern and constantly updated">
+	<meta property="twitter:image" content="<%- botconfig.domain %>/public/assets/avatar512.jpg">
+	<meta content="#618eb1" data-react-helmet="true" name="theme-color"/>
+
+	<link rel="stylesheet" href="../public/css/bootstrap.css">
+	<link rel="stylesheet" href="../public/css/index.css">
+	<script src="../public/js/popper.min.js"></script>
+	<script src="../public/js/bootstrap.bundle.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+	<script src="../public/js/custom.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+	<title>cyberpunkxxx. | Home</title>
+	<style>
+		#cyberpunkxxx:hover {
+			text-decoration-color: #618eb1;
+			transition: text-decoration-color 0.2s ease-in-out;
+			
+		}
+		#cyberpunkxxx {
+			text-decoration-color: white;
+			transition: text-decoration-color 0.2s ease-in-out;
+		}
+		#cyberpunkxxx:hover > #cyberpunkxxxDot{
+			color: #618eb1;
+			transition: color 0.2s ease-in-out;
+		}
+		#cyberpunkxxx > #cyberpunkxxxDot {
+			color: white;
+			transition: color 0.2s ease-in-out;
+		}
+
+
+		#landing {
+			display: grid;
+			place-items: center;
+			align-content: center;
+		}
+
+		.hidden {
+			opacity: 0;
+			transform: translateZ(-100%);
+			transition: all 1s;
+		}
+
+		.show {
+			opacity: 1;
+			transform: translateZ(0);
+		}
+
+		@media(prefers-reduced-motion) {
+			.hidden {
+				transition: none;
+			}
+		}
+
+		comment {
+			color: #8d969e !important;
+		}
+
+		.custom-tooltip {
+			--bs-tooltip-bg: #121314;
+		}
+
+	</style>
+	<script defer src="../public/js/scrollAnimation.js"></script>
+	<script>
+		window.onload = () => {
+			const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+			const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+		}	
+	</script>
+</head>
+
+<body>
+	{{> header }}
+    {{{body}}}
+	
+    {{> footer }}
+
+{{> errors }}
+</body>
+</html>
